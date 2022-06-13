@@ -9,13 +9,16 @@ import Timer from "./components/Timer"
 
 const App = () => {
     const [board, setBoard] = useState(new Board())
+    // eslint-disable-next-line
     const [whitePlayer, setWhitePlayer] = useState(new Player(Colors.WHITE))
+    // eslint-disable-next-line
     const [blackPlayer, setBlackPlayer] = useState(new Player(Colors.BLACK))
     const [currentPlayer, setCurrentPlayer] = useState<Player | null>(null)
 
     useEffect(() => {
         restart()
         setCurrentPlayer(whitePlayer)
+        // eslint-disable-next-line
     }, [])
 
     function restart() {

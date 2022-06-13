@@ -14,6 +14,7 @@ const Timer: FC<TimerProps> = ({currentPlayer, restart}) => {
 
     useEffect(() => {
         startTimer()
+        // eslint-disable-next-line
     }, [currentPlayer])
 
     function startTimer() {
